@@ -38,7 +38,7 @@ for (var key in completeWords){
 
 function convertChars(text){
 	var text = String(text)
-	var probab = 0.5
+	var probab = 0.6
 
 	for (var key in words) {
 		reg = new RegExp(key, "gi")
@@ -75,7 +75,8 @@ function loadSubstitutes(orig, newCh){
 }
 
 function convertSingleChar(text){
-	var probab = 0.5
+	var upProbab = 0.5
+	var downProbab = 0.7
 	len = text.length
 	var newText = ""
 
@@ -83,16 +84,12 @@ function convertSingleChar(text){
 		charCode = text[i].charCodeAt()
 		chance = Math.random()
 		
-		if (chance <= probab){
-			if (charCode >= 65 && charCode <= 90){
-				subs = loadSubstitutes(text[i], String.fromCharCode(charCode + 32))
-				newText += subs[Math.floor(Math.random() * subs.length)]; // random from list
-			} else if (charCode >= 97 && charCode <= 122){
-				subs = loadSubstitutes(text[i], String.fromCharCode(charCode - 32))
-				newText += subs[Math.floor(Math.random() * subs.length)];
-			} else {
-				newText += text[i]
-			}
+		if (charCode >= 65 && charCode <= 90 && chance <= downProbab){
+			subs = loadSubstitutes(text[i], String.fromCharCode(charCode + 32))
+			newText += subs[Math.floor(Math.random() * subs.length)]; // random from list
+		} else if (charCode >= 97 && charCode <= 122 && chance <= upProbab){
+			subs = loadSubstitutes(text[i], String.fromCharCode(charCode - 32))
+			newText += subs[Math.floor(Math.random() * subs.length)];
 		} else {
 			newText += text[i]
 		}
