@@ -8,7 +8,7 @@ var chars = {
 
 var words = {
 	'tha': 'da',
-	'thi': 'di',
+	'this': 'dis',
 	'the': 'da',
 	'wha': 'wa',
 	'you': 'u',
