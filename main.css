@@ -1,0 +1,57 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+}
+
+#header {
+    padding: 0.5rem 0 0.5rem 0;
+    
+    background: #485563; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #485563 , #29323c); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #485563 , #29323c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#header h1 {
+    text-align: center;
+    color: #dddddd;
+    font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+#content {
+    margin: 2rem 1rem 0 1rem;
+}
+
+#input {
+    font-size: 13px;
+    display: block;
+    margin-right: 1rem;
+    /* width: calc(100% - 1rem); /** css 3 baby **/
+    font-family: Consolas;
+    border-radius: 0.3rem;
+}
+
+#output {
+    border: 1px solid darkmagenta;
+    border-radius: 0.2rem;
+    padding: 1rem;
+    flex: 1;
+    overflow-y: scroll;
+}
+
+#flex-container {
+    width: 100%;
+    min-height: 70%;
+    display: flex;
+    flex-direction: row;
+}
+
+#left-seg {
+    flex: auto;
+}
+
+#right-seg {
+    flex: 9999;
+    display: flex;
+    flex-direction: column;
+}
