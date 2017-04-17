@@ -16,7 +16,7 @@ var words = {
 }
 
 
-function convertWords(text){
+function convertChars(text){
 	var text = String(text)
 	var probab = 0.6
 
@@ -33,8 +33,17 @@ function convertWords(text){
 	return text
 }
 
+function loadSubstitutes(orig, newCh){
+	list = [newCh]
+	orig = orig.toLowerCase()
+	if (orig in chars) {
+		Array.prototype.push.apply(list, chars[orig]);
+	}
+	return list
+}
+
 function convertSingleChar(text){
-	var probab = 0.4
+	var probab = 0.5
 	len = text.length
 	var newText = ""
 
@@ -44,9 +53,11 @@ function convertSingleChar(text){
 		
 		if (chance <= probab){
 			if (charCode >= 65 && charCode <= 90){
-				newText += String.fromCharCode(charCode + 32)
+				subs = loadSubstitutes(text[i], String.fromCharCode(charCode + 32))
+				newText += subs[Math.floor(Math.random() * subs.length)]; // random from list
 			} else if (charCode >= 97 && charCode <= 122){
-				newText += (String.fromCharCode(charCode - 32))[0]
+				subs = loadSubstitutes(text[i], String.fromCharCode(charCode - 32))
+				newText += subs[Math.floor(Math.random() * subs.length)];
 			} else {
 				newText += text[i]
 			}
@@ -60,7 +71,7 @@ function convertSingleChar(text){
 
 function inputChangeEvent(){
 	val = $("#input").val()
-	newVal = convertWords(val)
+	newVal = convertChars(val)
 	console.log(newVal)
 	newVal = convertSingleChar(newVal)
 	console.log(newVal)
