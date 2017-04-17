@@ -8,7 +8,11 @@ var chars = {
 
 var words = {
 	'tha': 'da',
-	'thi': 'di'
+	'thi': 'di',
+	'the': 'da',
+	'wha': 'wa',
+	'you': 'u',
+	'ith': 'id'
 }
 
 
