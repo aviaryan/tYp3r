@@ -1,5 +1,7 @@
 # mAhLyfeMahRulezz
 
+http://aviaryan.in/mAhLyfeMahRulezz/
+
 
 ### Input
 
@@ -12,3 +14,7 @@ This is a normal sane piece of text written by the author of this tool. What you
 ```
 dis is a nOrmAl SAnE piEce of t3Xt wriTTen by ThE AUtHOR oF DIs t0ol. waT u DO wid IT iS noNe of mY BusineSs.
 ```
+
+### Contribute
+
+iF U hve s0Me sUggEsTi0nS oR IdEazz, pLeASe fILe An iSSue OR s3nD a pR. ThAnK yoU.
