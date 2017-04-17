@@ -2,11 +2,34 @@
 
 var chars = {
 	'o': ['0'],
-	'e': ['3']
+	'e': ['3'],
+	'i': ['1']
+}
+
+var words = {
+	'tha': 'da',
+	'thi': 'di'
 }
 
 
-function convert(text){
+function convertWords(text){
+	var text = String(text)
+	var probab = 0.6
+
+	for (var key in words) {
+		reg = new RegExp(key, "gi")
+		if (reg.test(text)){
+			chance = Math.random()
+			if (chance <= probab){
+				text = text.replace(reg, words[key])
+			}
+		}
+	}
+
+	return text
+}
+
+function convertSingleChar(text){
 	var probab = 0.4
 	len = text.length
 	var newText = ""
@@ -33,7 +56,9 @@ function convert(text){
 
 function inputChangeEvent(){
 	val = $("#input").val()
-	newVal = convert(val)
+	newVal = convertWords(val)
+	console.log(newVal)
+	newVal = convertSingleChar(newVal)
 	console.log(newVal)
 	$("#output").text(newVal)
 }
