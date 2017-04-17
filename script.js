@@ -14,6 +14,7 @@ var words = {
 // the follwing should match at word end (or they should be complete words)
 var endWords = {
 	'you': 'u',
+	'are': 'r',
 	'ith': 'id',
 	'the': 'da',
 	'this': 'dis',
