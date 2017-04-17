@@ -31,12 +31,13 @@ function convert(text){
 	return newText
 }
 
+function inputChangeEvent(){
+	val = $("#input").val()
+	newVal = convert(val)
+	console.log(newVal)
+	$("#output").text(newVal)
+}
 
 $(document).ready(function(){
-	$("#input").bind('input propertychange', function(){
-		val = $("#input").val()
-		newVal = convert(val)
-		console.log(newVal)
-		$("#output").text(newVal)
-	})
+	$("#input").bind('input propertychange', inputChangeEvent)
 })
