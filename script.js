@@ -7,24 +7,32 @@ var chars = {
 }
 
 // this is matched using regex (case-insensitive)
+// the following match anywhere in the text
 var words = {
 	'tha': 'da',
-	'wha': 'wa'
+	'wha': 'wa',
+	'this': 'dis'
 }
 // the follwing should match at word end (or they should be complete words)
 var endWords = {
-	'you': 'u',
-	'are': 'r',
 	'ith': 'id',
-	'the': 'da',
-	'this': 'dis',
 	'es': 'ezz',
 	'my': 'mah'
 }
+// the following should match whole words
+var completeWords = {
+	'is': 'izz',
+	'you': 'u',
+	'are': 'r',
+	'the': 'da'
+}
 
-// convert endWords into words
+// join to words
 for (var key in endWords){
 	words[key + '(?=[^a-z])'] = endWords[key]
+}
+for (var key in completeWords){
+	words['([^a-z]|^)' + key + '(?=[^a-z])'] = '$1' + completeWords[key]
 }
 
 
@@ -43,7 +51,7 @@ function convertChars(text){
 				if (chance <= probab){
 					if (bracketCount < 2){
 						return words[key]
-					} else if (bracketCount == 2){  // ([ae])s: $1zz
+					} else if (bracketCount == 2){  // ([ae])s: $1zz, complete words
 						return words[key].replace("$1", p1)
 					}
 				} else {
