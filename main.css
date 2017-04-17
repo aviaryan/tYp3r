@@ -20,10 +20,11 @@ html, body {
 
 #content {
     margin: 2rem 1rem 0 1rem;
+    font-size: 1.8rem;
 }
 
 #input {
-    font-size: 13px;
+    font-size: 1rem;
     display: block;
     margin-right: 1rem;
     /* width: calc(100% - 1rem); /** css 3 baby **/
@@ -32,6 +33,7 @@ html, body {
 }
 
 #output {
+    font-size: 1.2rem;
     border: 1px solid darkmagenta;
     border-radius: 0.2rem;
     padding: 1rem;
