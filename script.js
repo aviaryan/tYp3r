@@ -17,7 +17,7 @@ var endWords = {
 	'ith': 'id',
 	'the': 'da',
 	'this': 'dis',
-	'([ei])s': '$1zz',  // lookahead if word end
+	'es': 'ezz',  // lookahead if word end
 	'my': 'mah'
 }
 
@@ -29,15 +29,27 @@ for (var key in endWords){
 
 function convertChars(text){
 	var text = String(text)
-	var probab = 0.6
+	var probab = 0.5
 
 	for (var key in words) {
 		reg = new RegExp(key, "gi")
+		var bracketCount = (key.match(/\(/g) || []).length
+
 		if (reg.test(text)){
-			chance = Math.random()
-			if (chance <= probab){
-				text = text.replace(reg, words[key])
-			}
+			// replace
+			text = text.replace(reg, (match, p1, p2) => {
+				chance = Math.random()
+				if (chance <= probab){
+					if (bracketCount < 2){
+						return words[key]
+					} else if (bracketCount == 2){
+						return words[key].replace("$1", p1)
+					}
+				} else {
+					return match
+				}
+			})
+			// end replace
 		}
 	}
 
