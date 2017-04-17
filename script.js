@@ -9,12 +9,21 @@ var chars = {
 // this is matched using regex (case-insensitive)
 var words = {
 	'tha': 'da',
-	'this': 'dis',
-	'the': 'da',
-	'wha': 'wa',
+	'wha': 'wa'
+}
+// the follwing should match at word end (or they should be complete words)
+var endWords = {
 	'you': 'u',
 	'ith': 'id',
-	'([ei])s(?=[^a-z])': '$1zz'  // lookahead if word end
+	'the': 'da',
+	'this': 'dis',
+	'([ei])s': '$1zz',  // lookahead if word end
+	'my': 'mah'
+}
+
+// convert endWords into words
+for (var key in endWords){
+	words[key + '(?=[^a-z])'] = endWords[key]
 }
 
 
