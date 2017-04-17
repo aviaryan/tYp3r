@@ -17,7 +17,7 @@ var endWords = {
 	'ith': 'id',
 	'the': 'da',
 	'this': 'dis',
-	'es': 'ezz',  // lookahead if word end
+	'es': 'ezz',
 	'my': 'mah'
 }
 
@@ -42,7 +42,7 @@ function convertChars(text){
 				if (chance <= probab){
 					if (bracketCount < 2){
 						return words[key]
-					} else if (bracketCount == 2){
+					} else if (bracketCount == 2){  // ([ae])s: $1zz
 						return words[key].replace("$1", p1)
 					}
 				} else {
