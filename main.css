@@ -73,4 +73,7 @@ html, body {
     #flex-container {
         display: block;
     }
+    #output {
+        margin-top: 1rem;
+    }
 }
