@@ -57,3 +57,14 @@ html, body {
     display: flex;
     flex-direction: column;
 }
+
+#buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#button-container .button {
+    margin-left: 10px;
+    margin-right: 10px;
+}
