@@ -18,3 +18,9 @@ dis is a nOrmAl SAnE piEce of t3Xt wriTTen by ThE AUtHOR oF DIs t0ol. waT u DO w
 ### Contribute
 
 iF U hve s0Me sUggEsTi0nS oR IdEazz, pLeASe fILe An iSSue OR s3nD a pR. ThAnK yoU.
+
+
+-----
+
+Thanks to [@anshumanag](https://twitter.com/anshumanag/status/853851127791493120) on Twitter for the idea.
+
