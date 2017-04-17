@@ -6,13 +6,15 @@ var chars = {
 	'i': ['1']
 }
 
+// this is matched using regex (case-insensitive)
 var words = {
 	'tha': 'da',
 	'this': 'dis',
 	'the': 'da',
 	'wha': 'wa',
 	'you': 'u',
-	'ith': 'id'
+	'ith': 'id',
+	'([ei])s(?=[^a-z])': '$1zz'  // lookahead if word end
 }
 
 
