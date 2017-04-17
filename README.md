@@ -21,6 +21,7 @@ waT u DO wid IT iS noNe of mY BusineSs.
 
 iF U hve s0Me sUggEsTi0nS oR IdEazz, pLeASe fILe An iSSue OR s3nD a pR. ThAnK yoU.
 
+**PS - Contributing is simple, see [script.js](script.js) file. It has all the required transformations. Editing it is as easy as editing a JSON file.**
 
 -----
 
