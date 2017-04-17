@@ -22,6 +22,7 @@ var endWords = {
 // the following should match whole words
 var completeWords = {
 	'is': 'izz',
+	'my': 'mah',
 	'you': 'u',
 	'are': 'r',
 	'the': 'da'
