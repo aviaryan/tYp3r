@@ -13,8 +13,8 @@ What you do with it is none of my business.
 ### Output
 
 ```
-dis is a nOrmAl SAnE piEce of t3Xt wriTTen by ThE AUtHOR oF DIs t0ol. 
-waT u DO wid IT iS noNe of maH BusineSs.
+dIS 1S a NoRMaL sAnE PIeC3 0F t3xT wrITTEN bY da AuThoR oF thIS TO0l.
+waT u D0 wid 1T iZz noNe of maH BuSineSs.
 ```
 
 ### Contribute
