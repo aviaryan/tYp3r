@@ -16,12 +16,12 @@ var words = {
 // the follwing should match at word end (or they should be complete words)
 var endWords = {
 	'ith': 'id',
-	'es': 'ezz',
-	'my': 'mah'
+	'es': 'ezz'
 }
 // the following should match whole words
 var completeWords = {
 	'is': 'izz',
+	'my': 'mah',
 	'you': 'u',
 	'are': 'r',
 	'the': 'da'
