@@ -16,7 +16,7 @@ var words = {
 // the follwing should match at word end (or they should be complete words)
 var endWords = {
 	'ith': 'id',
-	'([er])s': '$1zz'
+	'([erk])s': '$1zz'
 }
 // the following should match whole words
 var completeWords = {
