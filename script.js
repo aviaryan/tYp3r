@@ -13,18 +13,21 @@ var words = {
 	'wha': 'wa',
 	'this': 'dis'
 }
-// the follwing should match at word end (or they should be complete words)
+// the following should match at word end (or they should be complete words)
 var endWords = {
 	'ith': 'id',
-	'es': 'ezz',
-	'my': 'mah'
+	'([erk])s': '$1zz'
 }
 // the following should match whole words
 var completeWords = {
 	'is': 'izz',
+	'my': 'mah',
 	'you': 'u',
 	'are': 'r',
-	'the': 'da'
+	'the': 'da',
+	'love': 'luv',
+	'brother': 'broda',
+	'sister': 'sista'
 }
 
 // join to words
