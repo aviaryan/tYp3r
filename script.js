@@ -3,7 +3,8 @@
 var chars = {
 	'o': ['0'],
 	'e': ['3'],
-	'i': ['1']
+	'i': ['1'],
+	't': ['7']
 }
 
 // this is matched using regex (case-insensitive)
@@ -28,6 +29,7 @@ var completeWords = {
 	'love': 'luv',
 	'brother': 'broda',
 	'sister': 'sista'
+	'for' : '4'
 }
 
 // join to words
