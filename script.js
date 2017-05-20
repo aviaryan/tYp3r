@@ -27,7 +27,8 @@ var completeWords = {
 	'the': 'da',
 	'love': 'luv',
 	'brother': 'broda',
-	'sister': 'sista'
+	'sister': 'sista',
+	'for' : '4'
 }
 
 // join to words
