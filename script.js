@@ -3,8 +3,7 @@
 var chars = {
 	'o': ['0'],
 	'e': ['3'],
-	'i': ['1'],
-	't': ['7']
+	'i': ['1']
 }
 
 // this is matched using regex (case-insensitive)
