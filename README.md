@@ -1,6 +1,6 @@
 # tYp3r
 
-**Link:** http://aviaryan.in/tYp3r/
+**Link:** http://typ3r.aavi.me
 
 
 ### Input
