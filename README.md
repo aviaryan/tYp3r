@@ -1,6 +1,6 @@
-# mAhLyfeMahRulezz
+# tYp3r
 
-**Link:** http://aviaryan.in/mAhLyfeMahRulezz/
+**Link:** http://aviaryan.in/tYp3r/
 
 
 ### Input
