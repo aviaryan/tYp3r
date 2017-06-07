@@ -19,9 +19,9 @@ waT u D0 wid 1T iZz noNe of maH BuS1neSs.
 
 ### Contribute
 
-iF U hve s0Me sUggEsTi0nS oR IdEazz, pLeASe fILe An iSSue OR s3nD a pR. ThAnK yoU.
+The conversion library (typ3r.js) used by this tool is at [aviaryan/typ3r.js](https://github.com/aviaryan/typ3r.js). Please send patches in that project.
 
-**PS - Contributing is simple, see [script.js](script.js) file. It has all the required transformations. Editing it is as easy as editing a JSON file.**
+**PS - Contributing is simple, see [index.js](https://github.com/aviaryan/typ3r.js/blob/master/index.js) file. It has all the required transformations. Editing it is as easy as editing a JSON file.**
 
 -----
 
