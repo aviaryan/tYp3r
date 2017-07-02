@@ -69,7 +69,7 @@ html, body {
     justify-content: center;
 }
 
-@media all and (max-width: 640px) {
+@media all and (max-width: 768px) {
     #flex-container {
         display: block;
     }
