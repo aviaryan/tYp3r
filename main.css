@@ -63,6 +63,11 @@ html, body {
     width: 90%;
 }
 
+#copyAnswer {
+    color: #485563;
+    font-size: 1rem;
+}
+
 #buttons-container {
     display: flex;
     flex-direction: row;

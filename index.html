@@ -33,12 +33,14 @@
 			<textarea name="text_in" id="input" rows="10"> </textarea>
 		</div>
 		<div id="right-seg">
-			<textarea name="text_out" id="output" rows="10" disabled="disabled"></textarea>
+			<textarea name="text_out" id="output" rows="10" readonly="readonly"></textarea>
 		</div>
 	</div>
 
 	<div>
 		<button onclick="javascript:inputChangeEvent();">Refresh</button>
+		<button id="copyBtn" data-clipboard-target="#output">Copy</button>
+		<span id="copyAnswer"></span>
 	</div>
 </div>
 
@@ -46,6 +48,7 @@
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://rawgit.com/aviaryan/typ3r.js/master/index.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
 <script src="script.js"></script>
 <script>
 $("#input").text("This is a normal sane piece of text written by the author of this tool. What you do with it is none of my business.")
